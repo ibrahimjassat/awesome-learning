@@ -1,11 +1,14 @@
 
 name: Link Checker
 
+# on:
+#  repository_dispatch:
+#  workflow_dispatch:
+#  schedule:
+#    - cron: "0 7 * * SUN"
+
 on:
-  repository_dispatch:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 7 * * SUN"
+  push:
 
 jobs:
   linkChecker:
